@@ -16,5 +16,5 @@ df = pd.read_sql(query,engine)
 df.info()
 # 在teradata中建立相应格式的字段
 
-teradata_engine = sqlalchemy.create_engine('teradatasql://chnccp_db_u28074879:Metro202004@164.61.235.21') # 只要ip地址，不需要详细数据库
+teradata_engine = sqlalchemy.create_engine('teradatasql://chnccp_db_user:password@host') # 只要ip地址，不需要详细数据库和端口
 df.to_sql('tablename', schema = 'database', con = teradata_engine,if_exists='append', index = False)
