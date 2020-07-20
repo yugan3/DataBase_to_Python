@@ -2,8 +2,8 @@ import pandas as pd
 import sqlalchemy
 import datetime
 
-teradata_engine = sqlalchemy.create_engine('teradatasql://chnccp_db_u28074879:Metro@062020@164.61.235.21')
-postgre_engine = sqlalchemy.create_engine('postgresql://metro@10.250.131.75:1526/metabase')
+teradata_engine = sqlalchemy.create_engine('teradatasql://chnccp_db_u28074879:XXXXXXXXXXX@164.61.235.21')
+postgre_engine = sqlalchemy.create_engine('postgresql://metro@XXXXXXXXXX')
 print(datetime.date.today())
 
 query = '''select a.* from (
